@@ -25,6 +25,27 @@
     $('answerTitle').textContent=slots===1?'Select one answer':'Build a '+slots+'-part answer';
     $('answerHint').textContent=slots===1?'Choose the best answer below.':'Select '+slots+' letters in the correct order.';
     $('feedback').className='feedback';$('feedback').textContent='';$('nextButton').hidden=true;$('submitButton').hidden=false;setLocked(false);drawAnswer();
+    renderPicker();
+  }
+  function jumpTo(idx){
+    if(idx===state.index||transitioning)return;
+    clearTimeout(transitionTimer);clearInterval(countdownTimer);transitioning=false;
+    state.index=idx;persist();renderQuestion();
+  }
+  function renderPicker(){
+    const grid=$('pickerGrid');if(!grid)return;
+    grid.replaceChildren();
+    questions.forEach((q,idx)=>{
+      const b=document.createElement('button');b.type='button';b.textContent=q.number;
+      b.setAttribute('aria-label','Go to question '+q.number);
+      let cls='picker-btn';
+      const record=state.answered.find(a=>a.number===q.number);
+      if(record)cls+=record.correct?' correct':' wrong';
+      if(state.flags.includes(q.number))cls+=' flagged';
+      if(idx===state.index)cls+=' current';
+      b.className=cls;b.onclick=()=>jumpTo(idx);
+      grid.appendChild(b);
+    });
   }
   function drawAnswer(){
     $('answerDisplay').replaceChildren();
@@ -78,7 +99,7 @@
   }
   $('startButton').onclick=()=>begin(false);$('resumeButton').onclick=()=>begin(true);$('submitButton').onclick=submit;$('nextButton').onclick=next;
   $('undoButton').onclick=()=>{selected.pop();drawAnswer()};$('clearButton').onclick=()=>{selected=[];drawAnswer()};
-  $('flagButton').onclick=()=>{const n=questions[state.index].number;state.flags=state.flags.includes(n)?state.flags.filter(x=>x!==n):state.flags.concat(n);persist();$('flagButton').classList.toggle('flagged',state.flags.includes(n));$('flagButton').textContent=state.flags.includes(n)?'★ Flagged':'☆ Flag'};
+  $('flagButton').onclick=()=>{const n=questions[state.index].number;state.flags=state.flags.includes(n)?state.flags.filter(x=>x!==n):state.flags.concat(n);persist();$('flagButton').classList.toggle('flagged',state.flags.includes(n));$('flagButton').textContent=state.flags.includes(n)?'★ Flagged':'☆ Flag';renderPicker()};
   $('exitButton').onclick=()=>{if(transitioning)return;persist();clearInterval(tick);show('welcomeScreen');$('resumeButton').hidden=false};$('retryButton').onclick=()=>begin(false);
   $('reviewButton').onclick=retestWrong;
   $('soundButton').onclick=()=>{const muted=localStorage.getItem('pyquest-muted')==='1';localStorage.setItem('pyquest-muted',muted?'0':'1');$('soundButton').textContent=muted?'♪':'×'};
