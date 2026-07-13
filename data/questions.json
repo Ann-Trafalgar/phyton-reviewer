@@ -137,7 +137,7 @@
   {
     "number": 28,
     "text": "28. Question 28\nYou are writing code that generates a random integer with a minimum value of 5 and a\nmaximum value of 11.\nWhich two functions should you use? Each correct answer presents a complete solution.\nChoose two.\n\nAnswer Area\n\n    A. random.randint(5, 11)\n    B. random.randrange(5, 12, 1)\n    C. random.randint(5, 12)\n    D. random.randrange(5, 11, 1)",
-    "answer": "AD"
+    "answer": "AB"
   },
   {
     "number": 29,
