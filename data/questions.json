@@ -418,5 +418,25 @@
     "number": 84,
     "text": "84. Question 84\nComplete the statements about Python unittest assert methods by selecting the correct option for each blank.\n\nAnswer Area\n\nTo test that the values of variables a and b are equal, use [1].\nTo test that objects a and b are the same object, use [2].\nTo test whether value exists in items, use [3].\n\n[1]\n    A. self.assertEqual(a, b)\n    B. self.assertIs(a, b)\n    C. self.assertIn(a, b)\n\n[2]\n    A. self.assertEqual(a, b)\n    B. self.assertIs(a, b)\n    C. self.assertIn(a, b)\n\n[3]\n    A. self.assertEqual(value, items)\n    B. self.assertIs(value, items)\n    C. self.assertIn(value, items)",
     "answer": "ABC"
+  },
+  {
+    "number": 85,
+    "text": "85. Question 85\nStudents are attending an activity night at their school. The following function tells students where to go for their activities:\n\ndef roomAssignment(student, year):\n    \"\"\"Assign rooms to students.\"\"\"\n    if year == 1:\n        print(f\"{student.title()}, please report to room 115\")\n    elif year == 2:\n        print(f\"{student.title()}, please report to room 210\")\n    elif year == 3:\n        print(f\"{student.title()}, please report to room 320\")\n    elif year == 4:\n        print(f\"{student.title()}, please report to room 405\")\n    elif year == 5:\n        print(f\"{student.title()}, please report to room 515\")\n    else:\n        print(f\"{student.title()}, please report to room 625\")\n\nWhich two code segments can be used to call the function? Choose two.\n\nAnswer Area\n\n    A. name = input(\"What is your name?\")\n       grade = 0\n       while grade not in (1, 2, 3, 4, 5, 6):\n           grade = int(input(\"What grade are you in (1-6)?\"))\n       roomAssignment(name, year=grade)\n    B. name = input(\"What is your name?\")\n       grade = 0\n       while grade not in (1, 2, 3, 4, 5, 6):\n           grade = int(input(\"What grade are you in (1-6)?\"))\n       roomAssignment(student, year)\n    C. roomAssignment(\"Sherlock Sassafrass\", 4)\n    D. roomAssignment(year=6, name=\"Minnie George\")",
+    "answer": "AC"
+  },
+  {
+    "number": 86,
+    "text": "86. Question 86\nYou are writing a function that increments the player score in a game.\n\nThe function has the following requirements:\n- If no value is specified for points, then points starts at one.\n- If bonus is True, then points must be doubled.\n\n01 def increment_score(score, bonus, points):\n02     if bonus == True:\n03         points = points * 2\n04     score = score + points\n05     return score\n06 points = 5\n07 score = 10\n08 new_score = increment_score(score, True, points)\n\nFor each statement, select Yes if the statement is true. Otherwise, select No.\n\nAnswer Area\n\n1. To meet the requirements, line 01 must be changed to def increment_score(score, bonus, points=1):\n2. If line 01 is not changed and the function is called with only two arguments, the third parameter will have the value None.\n3. Line 03 will also modify the value of the variable points declared on line 06.",
+    "answer": "YNN"
+  },
+  {
+    "number": 87,
+    "text": "87. Question 87\nA company needs help updating its file system. You must create a program that checks whether a file exists and, if it exists, displays its contents.\n\nComplete the code by selecting the correct option for each blank.\n\nAnswer Area\n\nimport os\nif [1] .\n    file = open(\"myFile.txt\")\n    [2] .\n    file.close()\n\n[1]\n    A. os.path.isfile(\"myFile.txt\"):\n    B. os.file.exists(\"myFile.txt\"):\n    C. isfile(\"myFile.txt\"):\n    D. os.path.isfile:\n\n[2]\n    A. print(file.read())\n    B. print(file.write())\n    C. file.read\n    D. print(file)",
+    "answer": "AA"
+  },
+  {
+    "number": 88,
+    "text": "88. Question 88\nYou are creating a program to calculate the rental fee for DVDs. The default cost is $1.59 per night. DVDs returned after 8 PM are charged for an extra night. Sunday rentals receive a 30% discount and Thursday rentals receive a 50% discount for the full rental.\n\nComplete the code by selecting the correct option for each blank.\n\nAnswer Area\n\n# DVD Rental Calculator\nontime = input(\"Was the video returned before 8 PM? Y or N\").lower()\ndays_rented = int(input(\"How many days was the video rented?\"))\nweekday = input(\"What day was the video rented?\").capitalize()\ncost_per_night = 1.59\nif ontime [1] .\n    days_rented += 1\ntotal = days_rented * cost_per_night\nif weekday [2] .\n    total *= 0.70\nelif weekday == \"Thursday\":\n    total *= 0.50\nprint(total)\n\n[1]\n    A. == \"n\":\n    B. == \"y\":\n    C. != \"n\":\n    D. is \"n\":\n\n[2]\n    A. == \"Sunday\":\n    B. == \"Thursday\":\n    C. != \"Sunday\":\n    D. in \"Sunday\":" ,
+    "answer": "AA"
   }
 ]
