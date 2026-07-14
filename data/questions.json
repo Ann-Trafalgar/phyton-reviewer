@@ -403,5 +403,10 @@
     "number": 81,
     "text": "81. Question 81\nReview the following code segment:\n\nf = open(\"python.txt\", \"a\")\nf.write(\"This is a line of text.\")\nf.close()\n\nFor each statement, select Yes if the statement is true. Otherwise, select No.\n\nAnswer Area\n\n1. A file named python.txt is created if it does not exist.\n2. Existing data in the file will be overwritten.\n3. Other code can open the file after this code runs.",
     "answer": "YNY"
+  },
+  {
+    "number": 82,
+    "text": "82. Question 82\nFor each statement about the following function, select Yes if the statement is true. Otherwise, select No.\n\ndef grosspay(hours=40, rate=25, pieces=0, piecerate=0, salary=0):\n    overtime = 0\n    if pieces > 0:\n        return pieces * piecerate\n    if salary > 0:\n        pass\n    if hours > 40:\n        overtime = (hours - 40) * (1.5 * rate)\n        return overtime + (40 * rate)\n    else:\n        return hours * rate\n\nAnswer Area\n\n1. A function call of grosspay() will create a syntax error.\n2. A function call of grosspay(salary=50000) will return nothing.\n3. A function call of grosspay(pieces=500, piecerate=4) will return a result of 2000.",
+    "answer": "NNY"
   }
 ]
