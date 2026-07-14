@@ -72,7 +72,7 @@
   {
     "number": 15,
     "text": "15. Question 15\nYou are writing a Python application for a dance studio.\nThe studio wants to encourage youth and seniors to sign up. Minors and seniors must\nreceive a 10% discount.\nYou write the following code. Line numbers are included for reference only.\n01 def get_discount(minor, senior):\n02 discount = .1\n04  discount = 0\n05 return discount\nYou need to complete the code.\nWhich code should you add on line 03?\n\nAnswer Area\n\n    A. if not (minor and senior):\n    B. if not (minor or senior):\n    C. if (not minor) and senior:\n    D. if (not minor) or senior:",
-    "answer": "A"
+    "answer": "B"
   },
   {
     "number": 16,
