@@ -357,7 +357,7 @@
   {
     "number": 72,
     "text": "72. Question 72\nYou are creating a function to calculate admission fees by using Python. Admission fees\nare calculated based on the following rules:\n. Anyone under age S = free admission\n. Anyone age S or older who is in school = 10 USD\n. Anyone age S to 17 who is not in school = 20 USD\n. Anyone older than age 17 who is not in school = SO USD\nHow should you complete the code? To answer, select the appropriate code segments in\nthe answer area.\n\nAnswer Area\n\ndef admission_fee(age, school):\nrate = 0\n[1] .\nrate = 10\n[2] .\n[3] .\nrate = 20\nelse:\nrate = 50\nreturn rate\n\n[1]\n    A. if age >= 5 and school == True:\n    B. if age >= 5 and age <= 17:\n    C. if age >= 5 and school == False:\n\n[2]\n    A. elif age >= 5 and school == False:\n    B. else age >= 5 and school == False:\n    C. elif age >= 5 and school == True:\n\n[3]\n    A. if age >= 5 and school == True:\n    B. if age >= 5 and school == False:\n    C. if age <= 17:",
-    "answer": "ABC"
+    "answer": "AAC"
   },
   {
     "number": 73,
