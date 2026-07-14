@@ -408,5 +408,15 @@
     "number": 82,
     "text": "82. Question 82\nFor each statement about the following function, select Yes if the statement is true. Otherwise, select No.\n\ndef grosspay(hours=40, rate=25, pieces=0, piecerate=0, salary=0):\n    overtime = 0\n    if pieces > 0:\n        return pieces * piecerate\n    if salary > 0:\n        pass\n    if hours > 40:\n        overtime = (hours - 40) * (1.5 * rate)\n        return overtime + (40 * rate)\n    else:\n        return hours * rate\n\nAnswer Area\n\n1. A function call of grosspay() will create a syntax error.\n2. A function call of grosspay(salary=50000) will return nothing.\n3. A function call of grosspay(pieces=500, piecerate=4) will return a result of 2000.",
     "answer": "NNY"
+  },
+  {
+    "number": 83,
+    "text": "83. Question 83\nView the following program. Line numbers are for reference only.\n\n01 def petStore(category, species, breed=\"none\"):\n02     print(f\"You have selected an animal from the {category} category.\")\n03     if breed == \"none\":\n04         print(f\"The {category} you selected is a {species}.\")\n05     else:\n06         print(f\"The {category} you selected is a {species} {breed}.\")\n07\n08 category = input(\"Enter dog, cat, or bird: \" )\n09 species = input(\"Enter species: \" )\n10 if category == \"dog\" or category == \"cat\":\n11     breed = input(\"Enter breed: \" )\n12     petStore(category, species, breed)\n13 else:\n14     petStore(category, species)\n15 petStore(breed=\"Maltese\", species=\"Canine\", category=\"dog\")\n16 petstore(\"bird\", species=\"Scarlet Macaw\")\n\nFor each statement, select Yes if the statement is true. Otherwise, select No.\n\nAnswer Area\n\n1. The function returns a value.\n2. The function calls on lines 12 and 15 are valid.\n3. The function calls on lines 14 and 16 will both result in an error.",
+    "answer": "NYN"
+  },
+  {
+    "number": 84,
+    "text": "84. Question 84\nComplete the statements about Python unittest assert methods by selecting the correct option for each blank.\n\nAnswer Area\n\nTo test that the values of variables a and b are equal, use [1].\nTo test that objects a and b are the same object, use [2].\nTo test whether value exists in items, use [3].\n\n[1]\n    A. self.assertEqual(a, b)\n    B. self.assertIs(a, b)\n    C. self.assertIn(a, b)\n\n[2]\n    A. self.assertEqual(a, b)\n    B. self.assertIs(a, b)\n    C. self.assertIn(a, b)\n\n[3]\n    A. self.assertEqual(value, items)\n    B. self.assertIs(value, items)\n    C. self.assertIn(value, items)",
+    "answer": "ABC"
   }
 ]

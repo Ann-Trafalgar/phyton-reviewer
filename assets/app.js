@@ -1,5 +1,6 @@
 (() => {
   const baseQuestions = window.QUIZ_DATA || [], $ = id => document.getElementById(id);
+  const originalQuestionCount = 73;
   const correctedQuestionText={
     57:`57. Question 57
 You are developing a Python application for an online product distribution company.
@@ -128,7 +129,7 @@ index = 0
   function restore(){try{return JSON.parse(localStorage.getItem('pyquest-progress'))}catch(e){return null}}
   function startTimer(){clearInterval(tick);tick=setInterval(()=>{state.elapsed++;$('timer').textContent=formatTime(state.elapsed);if(state.elapsed%5===0)persist()},1000)}
   function tone(ok){if(localStorage.getItem('pyquest-muted')==='1')return;try{const a=new AudioContext(),o=a.createOscillator(),g=a.createGain();o.frequency.value=ok?620:180;g.gain.value=.035;o.connect(g);g.connect(a.destination);o.start();o.stop(a.currentTime+.09)}catch(e){}}
-  function begin(resume){if(!resume){state=freshState();const shuffleMode=$('shuffleMode').value;state.shuffleQuestions=shuffleMode==='questions'||shuffleMode==='both';state.shuffleChoices=shuffleMode==='choices'||shuffleMode==='both';state.pauseWrong=$('pauseWrongToggle').checked;if(state.shuffleQuestions)state.order=shuffled(state.order);persist()}applyOrder();show('quizScreen');startTimer();renderQuestion()}
+  function begin(resume,mode='full'){if(!resume){state=freshState();state.mode=mode;if(mode==='new')state.order=baseQuestions.filter(q=>q.number>originalQuestionCount).map(q=>q.number);const shuffleMode=$('shuffleMode').value;state.shuffleQuestions=shuffleMode==='questions'||shuffleMode==='both';state.shuffleChoices=shuffleMode==='choices'||shuffleMode==='both';state.pauseWrong=$('pauseWrongToggle').checked;if(state.shuffleQuestions)state.order=shuffled(state.order);persist()}applyOrder();show('quizScreen');startTimer();renderQuestion()}
   function renderQuestion(){
     clearTimeout(transitionTimer);clearInterval(countdownTimer);transitioning=false;
     const q=questions[state.index];selected=[];
@@ -300,10 +301,10 @@ index = 0
     state=freshState();state.mode='review';state.shuffleQuestions=shuffleQuestions;state.shuffleChoices=shuffleChoices;state.pauseWrong=pauseWrong;state.order=shuffleQuestions?shuffled(wrongNumbers):wrongNumbers;
     persist();applyOrder();show('quizScreen');startTimer();renderQuestion();
   }
-  $('startButton').onclick=()=>begin(false);$('resumeButton').onclick=()=>begin(true);$('submitButton').onclick=submit;$('nextButton').onclick=next;
+  $('startButton').onclick=()=>begin(false,'full');$('newQuestionsButton').onclick=()=>begin(false,'new');$('resumeButton').onclick=()=>begin(true);$('submitButton').onclick=submit;$('nextButton').onclick=next;
   $('undoButton').onclick=()=>{selected.pop();drawAnswer()};$('clearButton').onclick=()=>{selected=[];drawAnswer()};
   $('flagButton').onclick=()=>{const n=questions[state.index].number;state.flags=state.flags.includes(n)?state.flags.filter(x=>x!==n):state.flags.concat(n);persist();$('flagButton').classList.toggle('flagged',state.flags.includes(n));$('flagButton').textContent=state.flags.includes(n)?'★ Flagged':'☆ Flag';renderPicker()};
-  $('exitButton').onclick=()=>{if(transitioning)return;persist();clearInterval(tick);show('welcomeScreen');$('resumeButton').hidden=false};$('retryButton').onclick=()=>begin(false);
+  $('exitButton').onclick=()=>{if(transitioning)return;persist();clearInterval(tick);show('welcomeScreen');$('resumeButton').hidden=false};$('retryButton').onclick=()=>begin(false,state.mode==='new'?'new':'full');
   $('reviewButton').onclick=retestWrong;
   $('soundButton').onclick=()=>{const muted=localStorage.getItem('pyquest-muted')==='1';localStorage.setItem('pyquest-muted',muted?'0':'1');$('soundButton').textContent=muted?'♪':'×'};
   function setTheme(theme){document.documentElement.dataset.theme=theme;localStorage.setItem('pyquest-theme',theme);$('themeButton').textContent=theme==='dark'?'☀':'☾';$('themeButton').setAttribute('aria-label',theme==='dark'?'Use light mode':'Use dark mode')}
