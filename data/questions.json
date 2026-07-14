@@ -246,8 +246,8 @@
   },
   {
     "number": 50,
-    "text": "50. Question 50\nYou have the following list structure:\nalph = “abcdefghijklnnopqrstuvwxyz”\nYou need to evaluate the result of performing various slicing operations.\nMatch the result to the slicing operation. To answer, drag the appropriate result from the\ncolumn on the left to its slicing operation on the right. Each result may be used once,\nmore than once, or not at all.\nResults\n[A] zwtqnkheb\n[B] pmjg\n[C] defghijklmno\n[D] ponmlkjihgfe\n[E] defghijklmnop\n[F] dgjm\n[G] olif\n[H] “”\n\nAnswer Area\n\n[1] . alph[3:15]\n[2] . alph[3:15:3]\n[3] . alph[3:15:-3]\n[4] . alph[15:3:-3]\n[5] . alph[15:3]\n[6] . alph[::-3]",
-    "answer": "CFHBDA"
+    "text": "50. Question 50\nYou have the following list structure:\nalph = “abcdefghijklmnopqrstuvwxyz”\nYou need to evaluate the result of performing various slicing operations.\nMatch the result to the slicing operation. To answer, drag the appropriate result from the\ncolumn on the left to its slicing operation on the right. Each result may be used once,\nmore than once, or not at all.\nResults\n[A] zwtqnkheb\n[B] pmjg\n[C] defghijklmno\n[D] ponmlkjihgfe\n[E] defghijklmnop\n[F] dgjm\n[G] olif\n[H] “”\n\nAnswer Area\n\n[1] . alph[3:15]\n[2] . alph[3:15:3]\n[3] . alph[3:15:-3]\n[4] . alph[15:3:-3]\n[5] . alph[15:3]\n[6] . alph[::-3]",
+    "answer": "CFHBHA"
   },
   {
     "number": 51,
