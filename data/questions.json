@@ -222,7 +222,7 @@
   {
     "number": 45,
     "text": "45. Question 45\nYou are writing a Python program that evaluates an arithmetic formula.\nThe formula is described as b equals a multiplied by negative one, then raised to the\nsecond power, where a is the value that will be input and b is the result\nYou create the following code segment Line numbers are included for reference only.\n01 a = eval(input(“Enter a number for the equation: “))\n02 b =\nYou need to ensure that the result is correct.\nHow should you complete the code on line 02? To answer, drag the appropriate code\nsegment to the correct location. Each code segment may be used once, more than once,\nor not at all. You may need to drag the split bar between panes or scroll to view content.\nCode Segments\n[A] -\n[B] (\n[C] )\n[D] **\n[E] **2\n[F] 2\n[G] A\n\nAnswer Area\n\nb= .",
-    "answer": "BAFCE"
+    "answer": "BAGCE"
   },
   {
     "number": 46,
