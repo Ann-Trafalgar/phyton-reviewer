@@ -463,5 +463,35 @@
     "number": 93,
     "text": "93. Question 93\nYou are creating a JavaScript function named countdown. The function accepts a parameter named start and displays a countdown from that number to and including zero in increments of one.\n\nComplete the code by selecting the correct option for each blank.\n\nAnswer Area\n\nfunction countdown(start) {\n    for ([1] .; [2] .; [3] .) {\n        console.log(i);\n    }\n}\n\n[1]\n    A. var i = start\n    B. var i = 0\n    C. var i = start - 1\n\n[2]\n    A. i >= 0\n    B. i > 0\n    C. i <= 0\n\n[3]\n    A. i--\n    B. i++\n    C. --start",
     "answer": "AAA"
+  },
+  {
+    "number": 94,
+    "text": "94. Question 94\nYou are developing a web page that displays student registration information. Complete the JavaScript code so it retrieves and displays the student information correctly.\n\nAnswer Area\n\n[1] .\n    this.firstName = firstName;\n    this.lastName = lastName;\n    this.major = major;\n    this.year = year;\n    this.info = function() {\n        document.write(\"<p>You are registered as \" + this.firstName + \" \" + this.lastName + \".</p>\");\n    };\n}\n[2] .\n[3] .\n\n[1]\n    A. function Student(firstName, lastName, major, year) {\n    B. class Student(firstName, lastName, major, year) {\n    C. function Student() (firstName, lastName, major, year) {\n\n[2]\n    A. var newStudent = new Student(\"Sherlock\", \"Sassafrass\", \"IT\", \"freshman\");\n    B. var newStudent = Student.new(\"Sherlock\", \"Sassafrass\", \"IT\", \"freshman\");\n    C. var newStudent = Student(\"Sherlock\", \"Sassafrass\", \"IT\", \"freshman\");\n\n[3]\n    A. newStudent.info();\n    B. info();\n    C. Student.info();",
+    "answer": "AAA"
+  },
+  {
+    "number": 95,
+    "text": "95. Question 95\nA company needs help updating its file system. Create a file using the specified name and append the phrase End of listing to the file.\n\nComplete the code by selecting the correct option for each blank.\n\nAnswer Area\n\nimport os\nfile = [1] .\n[2] . (\"End of listing\")\nfile.close()\n\n[1]\n    A. open(\"myFile.txt\", \"a\")\n    B. open(\"myFile.txt\", \"r\")\n    C. open(\"myFile.txt\", \"x\")\n    D. open(\"myFile.txt\", \"w\")\n\n[2]\n    A. file.write\n    B. file.read\n    C. file.append\n    D. write",
+    "answer": "AA"
+  },
+  {
+    "number": 96,
+    "text": "96. Question 96\nEvaluate the following JavaScript code. Line numbers are included for reference only.\n\n01 var n = 50;\n02 var c = n + 5;\n03 var a = n % 2;\n04 var d = c / 11;\n05 n = d * 2;\n06 console.log(n, c, a, d);\n\nMove the appropriate values to the variables.\n\nValues\n[A] 0\n[B] 1\n[C] 5\n[D] 10\n[E] 25\n[F] 55\n[G] 100\n[H] 110\n\nAnswer Area\n\n[1] . n\n[2] . c\n[3] . a\n[4] . d",
+    "answer": "DFAC"
+  },
+  {
+    "number": 97,
+    "text": "97. Question 97\nYour instructor has the following JavaScript exception-handling requirements:\n- displayInfo() must use exception handling.\n- display() must always run, regardless of whether an exception occurs.\n- If there is an exception, call logDisplayInfoError() and correctDisplayInfo().\n\nComplete the code by selecting the correct option for each blank.\n\nAnswer Area\n\n[1] . {\n    displayInfo();\n}\n[2] . {\n    logDisplayInfoError();\n    correctDisplayInfo();\n}\n[3] . {\n    display();\n}\n\n[1]\n    A. try\n    B. catch (error)\n    C. finally\n\n[2]\n    A. catch (error)\n    B. except\n    C. finally\n\n[3]\n    A. finally\n    B. catch (error)\n    C. else",
+    "answer": "AAA"
+  },
+  {
+    "number": 98,
+    "text": "98. Question 98\nYou are writing a Python program to display special offers for My Healthy Eats Delivery. Complete lines 04, 05, and 15.\n\nAnswer Area\n\nimport datetime\ndailySpecials = (\"Spaghetti\", \"Macaroni & Cheese\", \"Meatloaf\")\nweekendSpecials = (\"Lobster\", \"Prime Rib\", \"Parmesan-Crusted Cod\")\n[1] .\n[2] .\nprint(\"My Healthy Eats Delivery\")\nif today == \"Friday\" or today == \"Saturday\" or today == \"Sunday\":\n    print(\"The weekend specials include:\")\n    for item in weekendSpecials:\n        print(item)\nelse:\n    print(\"The weekday specials include:\")\n    for item in dailySpecials:\n        print(item)\n[3] .\nprint(f\"Pricing specials change in {daysLeft} days\")\n\n[1]\n    A. currentDate = datetime.date.today()\n    B. currentDate = datetime.date.weekday()\n    C. currentDate = datetime.today()\n\n[2]\n    A. today = currentDate.strftime(\"%A\")\n    B. today = currentDate.weekday\n    C. today = datetime.date.today\n\n[3]\n    A. daysLeft = 6 - currentDate.weekday()\n    B. daysLeft = 7 - currentDate.weekday()\n    C. daysLeft = currentDate.weekday()",
+    "answer": "AAA"
+  },
+  {
+    "number": 99,
+    "text": "99. Question 99\nAnswer the questions about documenting Python code by selecting the correct option for each blank.\n\nReview the following function:\n\ndef cube(n):\n    \"\"\"Returns the cube of number n.\"\"\"\n    return n * n * n\n\nWhich characters signal the beginning and ending of a one-line docstring? [1] .\nWhere is the standard location for a function docstring? [2] .\nWhich command prints the function's docstring? [3] .\n\n[1]\n    A. Triple quotation marks\n    B. A single # character\n    C. Parentheses\n\n[2]\n    A. As the first statement inside the function\n    B. Immediately before the def statement\n    C. After the return statement\n\n[3]\n    A. print(cube.__doc__)\n    B. print(cube.doc)\n    C. print(__doc__.cube)",
+    "answer": "AAA"
   }
 ]
