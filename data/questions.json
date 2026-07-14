@@ -438,5 +438,30 @@
     "number": 88,
     "text": "88. Question 88\nYou are creating a program to calculate the rental fee for DVDs. The default cost is $1.59 per night. DVDs returned after 8 PM are charged for an extra night. Sunday rentals receive a 30% discount and Thursday rentals receive a 50% discount for the full rental.\n\nComplete the code by selecting the correct option for each blank.\n\nAnswer Area\n\n# DVD Rental Calculator\nontime = input(\"Was the video returned before 8 PM? Y or N\").lower()\ndays_rented = int(input(\"How many days was the video rented?\"))\nweekday = input(\"What day was the video rented?\").capitalize()\ncost_per_night = 1.59\nif ontime [1] .\n    days_rented += 1\ntotal = days_rented * cost_per_night\nif weekday [2] .\n    total *= 0.70\nelif weekday == \"Thursday\":\n    total *= 0.50\nprint(total)\n\n[1]\n    A. == \"n\":\n    B. == \"y\":\n    C. != \"n\":\n    D. is \"n\":\n\n[2]\n    A. == \"Sunday\":\n    B. == \"Thursday\":\n    C. != \"Sunday\":\n    D. in \"Sunday\":" ,
     "answer": "AA"
+  },
+  {
+    "number": 89,
+    "text": "89. Question 89\nYou are writing code to create an E shape from asterisks. Print five lines, with four asterisks on the first, third, and fifth lines and one asterisk on the second and fourth lines.\n\nComplete the code by selecting the correct number for each blank.\n\nAnswer Area\n\nresult_str = \"\"\nfor row in range(1, [1] .):\n    for column in range(1, [2] .):\n        if row == 1 or row == 3 or row == 5:\n            result_str += \"*\"\n        elif column == 1:\n            result_str += \"*\"\n    result_str += \"\\n\"\nprint(result_str)\n\n[1]\n    A. 5\n    B. 6\n    C. 4\n\n[2]\n    A. 5\n    B. 6\n    C. 4",
+    "answer": "BA"
+  },
+  {
+    "number": 90,
+    "text": "90. Question 90\nYou need to write code that performs the following tasks:\n- Call the process() function.\n- If process() throws an error, call logError().\n- Always call displayResult() after calling process().\n\nMove the appropriate code segments to the correct locations.\n\nCode Segments\n[A] assert:\n[B] except:\n[C] finally:\n[D] raise:\n[E] try:\n\nAnswer Area\n\n[1] .\n    process()\n[2] .\n    logError()\n[3] .\n    displayResult()",
+    "answer": "EBC"
+  },
+  {
+    "number": 91,
+    "text": "91. Question 91\nYou need to identify the results of performing slicing operations on the following sequence:\n\nalph = \"abcdefghijklmnopqrstuvwxyz\"\n\nMove the appropriate results to the correct slicing operations.\n\nResults\n[A] def\n[B] abcdef\n[C] cde\n[D] defg\n[E] cdef\n[F] abcde\n\nAnswer Area\n\n[1] . alph[3:6]\n[2] . alph[:6]",
+    "answer": "AB"
+  },
+  {
+    "number": 92,
+    "text": "92. Question 92\nWrite a program that recommends Ride Bike, Take Train, or Drive your car based on the weather and the amount of fuel in the car.\n\n- When the temperature is above 65 degrees and it is not raining, ride the bike.\n- If the fuel tank has half a tank of gas or less, take the train.\n- Otherwise, drive the car.\n\nComplete the JavaScript code by selecting the correct option for each blank.\n\nAnswer Area\n\nif (temperature > 65 [1] . [2] . raining)\n    advice = \"Ride Bike\";\nelse if (fuelTank [3] . 0.5)\n    advice = \"Take Train\";\nelse\n    advice = \"Drive your car\";\n\n[1]\n    A. &&\n    B. ||\n    C. ==\n\n[2]\n    A. !\n    B. ==\n    C. &&\n\n[3]\n    A. <=\n    B. >=\n    C. ==",
+    "answer": "AAA"
+  },
+  {
+    "number": 93,
+    "text": "93. Question 93\nYou are creating a JavaScript function named countdown. The function accepts a parameter named start and displays a countdown from that number to and including zero in increments of one.\n\nComplete the code by selecting the correct option for each blank.\n\nAnswer Area\n\nfunction countdown(start) {\n    for ([1] .; [2] .; [3] .) {\n        console.log(i);\n    }\n}\n\n[1]\n    A. var i = start\n    B. var i = 0\n    C. var i = start - 1\n\n[2]\n    A. i >= 0\n    B. i > 0\n    C. i <= 0\n\n[3]\n    A. i--\n    B. i++\n    C. --start",
+    "answer": "AAA"
   }
 ]
