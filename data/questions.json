@@ -172,7 +172,7 @@
   {
     "number": 35,
     "text": "35. Question 35\nYou are developing a Python application for your company.\nYou write the following code:\nnumList = [1,2,3,4,5]\nalphaList = [“a”,”b”,”c”,”d”,”e”]\nprint(numList is alphaList)\nprint(numList == alphaList)\nnumList = alphaList\nprint(numList is alphaList)\nprint(numList == alphaList)\nFor each of the following statements, select Yes if the statement is true. Otherwise,\nselect No.\n\nAnswer Area\n\nYes No\nWhat is displayed after the first print? 〇 〇\nWhat is displayed after the second print? 〇 〇\nWhat is displayed after the third print? 〇 〇\nWhat is displayed after the fourth print? 〇 〇",
-    "answer": "YNYY"
+    "answer": "NNYY"
   },
   {
     "number": 36,
