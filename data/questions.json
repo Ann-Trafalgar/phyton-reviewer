@@ -363,5 +363,45 @@
     "number": 73,
     "text": "73. Question 73\nYou develop a Python application for your company.\nHow should you complete the code so that the print statements are accurate? To answer,\nselect the appropriate code segments in the answer area.\n\nAnswer Area\n\nnumList = [1,2,3,4,5]\nalphaList = [“a”,”b”,’c”,”d”,’e”]\n[1] .\nprint(”The values in numList are equal to alphaList”)\n[2] .\nprint(“The values in numList are not equal to alphaList”)\n\n[1]\n    A. if numList == alphaList:\n    B. if numList == alphaList\n    C. else:\n    D. else\n    B. if numList == alphaList\n\n[2]\n    A. if numList == alphaList:\n    D. else\n    C. else:",
     "answer": "AC"
+  },
+  {
+    "number": 74,
+    "text": "74. Question 74\nThe Script.py file contains the following code:\n\nimport sys\nprint(sys.argv[2])\n\nYou run the following command:\n\npython Script.py Cheese Bacon Bread\n\nWhat is the output of the command?\n\nAnswer Area\n\n    A. Cheese\n    B. Script.py\n    C. Bread\n    D. Bacon",
+    "answer": "D"
+  },
+  {
+    "number": 75,
+    "text": "75. Question 75\nYou need to determine whether the variable x has no value.\nWhich syntax should you use in Python?\n\nAnswer Area\n\n    A. x is None\n    B. x == \"null\"\n    C. x = None\n    D. type(x) is None",
+    "answer": "A"
+  },
+  {
+    "number": 76,
+    "text": "76. Question 76\nYou need to determine whether a string named str is empty.\nWhich syntax should you use?\n\nAnswer Area\n\n    A. str == \"\"\n    B. str == \"null\"\n    C. str == None\n    D. str == \"empty\"",
+    "answer": "A"
+  },
+  {
+    "number": 77,
+    "text": "77. Question 77\nA friend asks you to refactor and document the following Python code:\n\nvalue1 = 9\nvalue2 = 4\nanswer = (value1 % value2 * 10) // 2.0 ** 3.0 + value2\n\nYou run the code.\nWhat is the result?\n\nAnswer Area\n\n    A. The value 5.0 is displayed.\n    B. The value 129 is displayed.\n    C. A syntax error occurs.\n    D. The value 5.667 is displayed.",
+    "answer": "A"
+  },
+  {
+    "number": 78,
+    "text": "78. Question 78\nReview the following code segment:\n\nproduct = 2\nn = 5\nwhile n != 0:\n    product *= n\n    print(product)\n    n -= 1\n    if n == 3:\n        break\n\nHow many lines of output does the code print?\n\nAnswer Area\n\n    A. 1\n    B. 2\n    C. 3\n    D. 5",
+    "answer": "B"
+  },
+  {
+    "number": 79,
+    "text": "79. Question 79\nWhat does the following statement do?\n\ndata = input()\n\nAnswer Area\n\n    A. Displays all input peripheral devices on the computer.\n    B. Displays a message box that allows user input.\n    C. Creates an HTML input element.\n    D. Allows a user to enter text in the console.",
+    "answer": "D"
+  },
+  {
+    "number": 80,
+    "text": "80. Question 80\nThe following function calculates the value of an expression that uses an exponent. Line numbers are included for reference only.\n\n01 def calc_power(a, b):\n02     return a**b\n03 base = input(\"Enter the number for the base: \" )\n04 exponent = input(\"Enter the number for the exponent: \" )\n05 result = calc_power(base, exponent)\n06 print(\"The result is \" + result)\n\nFor each statement, select Yes if the statement is true. Otherwise, select No.\n\nAnswer Area\n\n1. The code will generate an error on lines 03 and 04.\n2. The code will generate an error on line 02 when the function is called on line 05.\n3. The code will correctly output data to the console.",
+    "answer": "NYN"
+  },
+  {
+    "number": 81,
+    "text": "81. Question 81\nReview the following code segment:\n\nf = open(\"python.txt\", \"a\")\nf.write(\"This is a line of text.\")\nf.close()\n\nFor each statement, select Yes if the statement is true. Otherwise, select No.\n\nAnswer Area\n\n1. A file named python.txt is created if it does not exist.\n2. Existing data in the file will be overwritten.\n3. Other code can open the file after this code runs.",
+    "answer": "YNY"
   }
 ]

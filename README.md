@@ -1,6 +1,6 @@
 # PyQuest
 
-A responsive PHP and static quiz website containing all 73 questions from Python.pdf. The original question wording, answer areas, and answer-key values are preserved.
+A responsive PHP and static quiz website containing 81 questions compiled from the supplied Python study materials.
 
 ## XAMPP
 
